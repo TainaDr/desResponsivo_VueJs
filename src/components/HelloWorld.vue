@@ -1,16 +1,3 @@
-<script setup>
-import DemoGrid from './GridTaina.vue'
-import { ref } from 'vue'
-
-const searchQuery = ref('')
-const gridColumns = ['name', 'item', 'preco']
-const gridData = [
-    { name: 'Quadro Montanhas', item: 1, preco: 1800 },
-    { name: 'Quadro Ponte', item: 2, preco: 1300 },
-    { name: 'Quadro Praia', item: 3, preco: 200 }
-]
-</script>
-
 <template>
     <div class="container">
         <H1>Imagens | Desenvolvimento Responsivo - Aula 1</H1>
@@ -58,8 +45,6 @@ const gridData = [
             </tr>
         </table>
         <br>
-        <DemoGrid :data="gridData" :columns="gridColumns" :filter-key="searchQuery">
-        </DemoGrid>
         <footer></footer>
     </div>
 
